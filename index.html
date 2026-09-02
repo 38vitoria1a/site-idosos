@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portal de Segurança Digital - Terceira Idade</title>
+  <title>Portal de Segurança Digital e Ajuda</title>
   <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
@@ -16,13 +16,43 @@
 
   <header class="cabecalho">
     <h1>Segurança Digital Simplificada</h1>
-    <p>Guia prático para usar a internet com tranquilidade e proteção.</p>
+    <p>Guia prático e telefones úteis para navegar na internet com tranquilidade.</p>
   </header>
 
   <main class="conteudo">
 
+    <section aria-labelledby="titulo-emergencia" class="secao-emergencia">
+      <h2 id="titulo-emergencia" class="titulo-emergencia">Telefones Úteis e Emergência</h2>
+      <p class="subtitulo-emergencia">Clique ou ligue para esses números se precisar de ajuda urgente:</p>
+
+      <div class="grid-emergencia">
+        
+        <div class="card-emergencia">
+          <span class="icone-emergencia" aria-hidden="true">📞</span>
+          <h3>Polícia Militar</h3>
+          <a href="tel:190" class="botao-telefone">Ligar 190</a>
+          <p>Para casos de crimes virtuais graves ou emergências imediatas.</p>
+        </div>
+
+        <div class="card-emergencia">
+          <span class="icone-emergencia" aria-hidden="true">🛡️</span>
+          <h3>Disque Denúncia</h3>
+          <a href="tel:181" class="botao-telefone">Ligar 181</a>
+          <p>Para denunciar golpes, fraudes e fakes de forma anônima.</p>
+        </div>
+
+        <div class="card-emergencia">
+          <span class="icone-emergencia" aria-hidden="true">🏦</span>
+          <h3>Seu Banco</h3>
+          <div class="caixa-numero-banco">Número no cartão</div>
+          <p>Ligue no número do verso do seu cartão para bloquear senhas ou PIX.</p>
+        </div>
+
+      </div>
+    </section>
+
     <section aria-labelledby="titulo-dicas">
-      <h2 id="titulo-dicas" class="titulo-secao">Principais Cuidados no Dia a Dia</h2>
+      <h2 id="titulo-dicas" class="titulo-secao">Dicas Rápidas de Segurança</h2>
 
       <div class="grid-card">
         
@@ -31,39 +61,42 @@
             <span class="icone" aria-hidden="true">🔑</span>
             <h3>Senhas Seguras</h3>
           </div>
-          <p>Crie senhas usando frases fáceis de lembrar. Nunca use sua data de nascimento ou o nome de familiares.</p>
+          <p>Crie senhas usando frases fáceis de lembrar. Nunca use sua data de nascimento.</p>
         </article>
 
         <article class="card">
           <div class="card-topo">
             <span class="icone" aria-hidden="true">📩</span>
-            <h3>Mensagens e Links</h3>
+            <h3>Mensagens Suspeitas</h3>
           </div>
-          <p>Não clique em links enviados por números desconhecidos no WhatsApp ou e-mail, mesmo que pareçam ser de um banco.</p>
-        </article>
-
-        <article class="card">
-          <div class="card-topo">
-            <span class="icone" aria-hidden="true">📞</span>
-            <h3>Ligações de Bancos</h3>
-          </div>
-          <p>Bancos não ligam pedindo senha ou transferências. Se receber uma ligação assim, desligue e consulte a agência.</p>
-        </article>
-
-        <article class="card">
-          <div class="card-topo">
-            <span class="icone" aria-hidden="true">🙋‍♂️</span>
-            <h3>Pedir Ajuda</h3>
-          </div>
-          <p>Se tiver dúvidas sobre uma mensagem ou tela estranha, pare imediatamente e peça ajuda a alguém de confiança.</p>
+          <p>Não clique em links de números desconhecidos, mesmo que digam ser do seu banco.</p>
         </article>
 
       </div>
     </section>
 
-    <section class="caixa-alerta" role="note">
-      <h2>Estou com dúvida. O que fazer?</h2>
-      <p>Em caso de incerteza, não digite senhas nem faça pagamentos. Converse primeiro com um familiar ou amigo próximo.</p>
+    <section aria-labelledby="titulo-faq" class="secao-faq">
+      <h2 id="titulo-faq" class="titulo-secao">Perguntas Frequentes</h2>
+
+      <details class="item-faq">
+        <summary>Recebi uma mensagem do banco pedindo minha senha. O que faço?</summary>
+        <p>Não envie nada. Os bancos nunca pedem senhas por mensagem ou ligação. Apague a mensagem imediatamente.</p>
+      </details>
+
+      <details class="item-faq">
+        <summary>Um parente me pediu dinheiro urgente pelo WhatsApp. É seguro enviar?</summary>
+        <p>Não envie imediatamente. Ligue para o número do parente ou confirme por chamada de voz se é realmente ele antes de fazer qualquer transferência.</p>
+      </details>
+
+      <details class="item-faq">
+        <summary>Cliquei em um link estranho sem querer. E agora?</summary>
+        <p>Não digite nenhum dado pessoal ou senha. Feche o navegador e peça para alguém de confiança verificar o celular para você.</p>
+      </details>
+
+      <details class="item-faq">
+        <summary>Como sei se um site é seguro para compras?</summary>
+        <p>Verifique se há o símbolo de um cadeado ao lado do endereço do site no topo da tela e evite comprar em sites desconhecidos.</p>
+      </details>
     </section>
 
   </main>
