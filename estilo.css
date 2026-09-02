@@ -1,4 +1,3 @@
-/* Configuração Global focada em Acessibilidade */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,17 +6,44 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  /* Tamanho de fonte aumentado para facilitar a leitura */
   font-size: 20px;
   line-height: 1.6;
-  /* Alto contraste entre texto e fundo */
-  background-color: #f4f6f9;
-  color: #1a1a1a;
+  background-color: #f8f9fa;
+  color: #111111;
+}
+
+/* Barra de Acessibilidade Superior */
+.barra-acessibilidade {
+  background-color: #1a252f;
+  color: #ffffff;
+  padding: 10px 20px;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+
+.barra-acessibilidade button {
+  background-color: #ffffff;
+  color: #1a252f;
+  border: 2px solid #ffffff;
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.barra-acessibilidade button:focus,
+.barra-acessibilidade button:hover {
+  background-color: #f1c40f;
+  color: #000000;
 }
 
 /* Cabeçalho */
 .cabecalho {
-  background-color: #004085;
+  background-color: #004b87;
   color: #ffffff;
   padding: 40px 20px;
   text-align: center;
@@ -25,71 +51,70 @@ body {
 
 .cabecalho h1 {
   font-size: 2.2rem;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .cabecalho p {
   font-size: 1.2rem;
 }
 
-/* Área de Conteúdo */
+/* Layout do Conteúdo */
 .conteudo {
-  max-width: 1000px;
-  margin: 30px auto;
+  max-width: 1100px;
+  margin: 40px auto;
   padding: 0 20px;
 }
 
 .titulo-secao {
   font-size: 1.8rem;
-  color: #004085;
-  margin-bottom: 25px;
+  color: #004b87;
+  margin-bottom: 30px;
   text-align: center;
 }
 
-/* Layout em Grid dos Cards */
+/* Grids dos Cards */
 .grid-card {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 25px;
 }
 
-/* Estilo do Card Individual */
 .card {
   background-color: #ffffff;
-  border: 3px solid #004085;
+  border: 3px solid #004b87;
   border-radius: 12px;
   padding: 25px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.card-topo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
 }
 
 .icone {
-  font-size: 3rem;
-  margin-bottom: 15px;
-  text-align: center;
+  font-size: 2.5rem;
 }
 
 .card h3 {
   font-size: 1.4rem;
-  color: #004085;
-  margin-bottom: 12px;
+  color: #004b87;
 }
 
-.card p {
-  color: #2d2d2d;
-}
-
-/* Seção de Ajuda de Alto Destaque */
-.secao-ajuda {
+/* Caixa de Alerta */
+.caixa-alerta {
   background-color: #fff3cd;
-  border: 3px solid #ffebaa;
+  border: 3px solid #ffeba0;
   border-left: 10px solid #856404;
-  border-radius: 8px;
-  padding: 25px;
-  margin-top: 40px;
+  border-radius: 10px;
+  padding: 30px;
+  margin-top: 50px;
   text-align: center;
 }
 
-.secao-ajuda h2 {
+.caixa-alerta h2 {
   color: #856404;
   font-size: 1.6rem;
   margin-bottom: 10px;
@@ -97,10 +122,9 @@ body {
 
 /* Rodapé */
 .rodape {
-  background-color: #1a1a1a;
+  background-color: #1a252f;
   color: #ffffff;
   text-align: center;
-  padding: 20px;
-  margin-top: 50px;
-  font-size: 1rem;
+  padding: 25px;
+  margin-top: 60px;
 }
